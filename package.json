@@ -8,6 +8,8 @@
     "build:prod": "ng build --prod",
     "build:lib": "ng build --project=@uiowa/digit-only --prod",
     "test": "ng test",
+    "test:lib": "ng test --project=@uiowa/digit-only",
+    "test:lib:ci": "ng test --project=@uiowa/digit-only --watch=false --code-coverage",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

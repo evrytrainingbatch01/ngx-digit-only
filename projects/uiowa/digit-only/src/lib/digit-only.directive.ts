@@ -1,10 +1,10 @@
-import { Directive, ElementRef, HostListener } from '@angular/core';
+import { Directive, HostListener } from '@angular/core';
 
 @Directive({
   selector: '[digitOnly]'
 })
 export class DigitOnlyDirective {
-  constructor(public el: ElementRef) {}
+  constructor() {}
 
   @HostListener('keydown', ['$event'])
   onKeyDown(e: KeyboardEvent) {
